@@ -54,3 +54,10 @@ services:
 
 volumes:
   git-repositories:
+
+  arr = [7,4,9,2,6,3]
+insertionsort(arr)
+print('Sorted %s'  %arr) # sorted [2, 3, 4, 6, 7, 9]
+arr = [7,4,9,2,6,3]
+
+
