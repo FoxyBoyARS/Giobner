@@ -61,3 +61,23 @@ print('Sorted %s'  %arr) # sorted [2, 3, 4, 6, 7, 9]
 arr = [7,4,9,2,6,3]
 
 
+function switchTheme() {
+  wrapper.classList.toggle('dark-theme')
+  wrapper.classList.toggle('light-theme')
+
+  if (wrapper.classList.contains('dark-theme')) {
+    localStorage.setItem('theme', 'dark')
+  } else {
+    localStorage.setItem('theme', 'light')
+  }
+}
+
+if (localStorage.getItem('theme') == 'dark') {
+  themeSwitcher.setAttribute('checked', '')
+  switchTheme()
+} else {
+  themeSwitcher.removeAttribute('checked')
+}
+
+themeSwitcher.addEventListener('click', switchTheme)
+
