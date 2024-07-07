@@ -80,4 +80,4 @@ if (localStorage.getItem('theme') == 'dark') {
 }
 
 themeSwitcher.addEventListener('click', switchTheme)
-
+deep_flatten([1, [2], [[3], 4], 5]) # [1,2,3,4,5]
